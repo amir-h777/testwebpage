@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#d1
+			{
+				width:200px;
+				height:200px;
+				background-color:red;
+				/*transform:
+				-webkit-transform:
+				-o-transform:
+				-ms-transform:
+				-moz-transform:translate(100px 200px);*/
+				-moz-transition:-moz-transform 3s,width 2s,height 4s,background-color 3s;
+			}
+			#d1:hover
+			{
+				width:100px;
+				height:500px;
+				background-color:yellow;
+				-moz-transform:rotatex(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+			Hello World!
+		</div>
+	</body>
+</html>

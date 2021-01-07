@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<style>
+			#d1
+			{
+			width:500px;
+			height:5000px;
+			background-color:powderblue;
+			outline:10px solid silver;
+			display:block;
+			position:relative;
+			z-index:10;
+			}
+			#d2
+			{
+			width:300px;
+			height:300px;
+			background-color:gold;
+			outline:10px solid black;
+			border:5px dashed black;
+			display:block;
+			position:absolute;
+			/*position:fixed;*/
+			left:300px;
+			top:550px;
+			z-index:0;	
+			}
+			li
+			{
+				display:inline;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+			Hello World!!
+		</div><br/>
+		<div id="d2">
+			Hello Dummy!!
+		</div>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+		</ul>
+	</body>
+</html>

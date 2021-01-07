@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="HTMl/CSS/JS free advanced tutorial"/>
+		<meta name="author" content="Amirhosein Firoozi"/>
+		<meta name="keywords" content="HTML,CSS,JS,JQUERY"/>
+		<style>
+			html
+			{
+				background:url('Blood.png') no-repeat;
+				background-size:cover;
+				background-attachment:fixed;
+				background-position:center center;
+			}
+			body
+			{
+				margin:0px;
+			}
+			ul
+			{
+				list-style:none;
+				padding:0px;
+			}
+			
+			#d4
+			{
+				float:left;
+				margin:10px;
+			}
+			#d1
+			{
+				position:fixed;
+				z-index:10;
+				margin-left:50%;
+				margin-top:0px;
+				transform:translate(-50%,0px);
+				-moz-transform:translate(-50%,0px);
+				-webkit-transform:translate(-50%,0px);
+				-o-transform:translate(-50%,0px);
+				-ms-transform:translate(-50%,0px);
+				float:left;
+				width:1206px;
+				border:5px solid black;
+				border-radius:10px;
+				background-color:gray;
+			}
+			#d1>li
+			{
+				float:left;
+				text-align:center;
+				background-color:powderblue;
+				border-right:1px solid black;
+			}
+			li>.d2
+			{
+				display:none;
+			}
+			li:hover>.d2
+			{
+				display:block;
+			}
+			.d2>li
+			{
+				border-bottom:1px solid black;
+			}
+			a
+			{
+				text-decoration:none;
+				display:block;
+			}
+			#d1 a
+			{
+				color:black;
+				height:20px;
+				width:200px;
+			}
+			#d1 a:hover
+			{
+				color:powderblue;
+				text-decoration:none;
+				background-color:black;
+			}
+			#d5
+			{
+				position:absolute;
+				left:350px;
+				top:100px;
+				background-color:powderblue;
+				width:1206px;
+				height:2300px;
+			}
+			#d7
+			{
+				float:right;
+				margin:10px;
+			}
+			p a
+			{
+				width:220px;
+			}
+			p a::before
+			{
+				content:"==>";	
+			}
+			p a:visitde
+			{
+				color:red;
+				text-decoration:underline;
+			}
+			p a:hover
+			{
+				color:blue;
+				text-decoration:underline;
+			}
+			table
+			{
+				border:no;
+				border-spacing:10px;
+			}
+			th,td
+			{
+				border:1px solid black;
+				border-radius:10px;
+				padding:5px 20px;
+				background-color:#2b93fc;
+			}
+			th:nth-child(even)
+			{
+				background-color:#a97cf9;
+			}
+			td:nth-child(even)
+			{
+				background-color:#a97cf9;
+			}
+			th:nth-child(1)
+			{
+				background-color:#3af0ff;
+			}
+			td:nth-child(1)
+			{
+				background-color:#3af0ff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d4">
+			<img src="Sun.png" title="using img tag" alt="Sun" width="300px" height="700px"/>
+		</div>
+		<div id="d7">
+			<img src="Moon.png" title="Moon" alt="Moon" width="300px" height="700px"/>
+		</div>
+		<ul id="d1">
+				<li><a>HTML</a>
+					<ul class="d2">
+						<li><a href="Test 2.html" target="_blank">HTML elementry course</a></li>
+						<li><a href="Lists/Index4.html" target="_blank">HTMl advanced course </a></li>
+						<li><a href="Menu/Index10.html" target="_blank">HTMl projects</a></li>
+					</ul>
+				</li>
+				<li><a>CSS</a>
+					<ul class="d2">
+						<li><a href="@media/Index22.html" target="_blank">CSS elementry course</a></li>
+						<li><a href="2D&3D Styles/Index17.html" target="_blank">CSS advanced course</a></li>
+						<li><a href="a tag pseudo classes/Index3.html" target="_blank">CSS projects</a></li>
+					</ul>
+				</li>
+				<li><a>JS</a>
+					<ul class="d2">
+						<li><a href="Animations/Index18.html" target="_blank">JS elementry course</a></li>
+						<li><a href="attribute selector/Index12.html" target="_blank">JS advanced course</a></li>
+						<li><a href="background..url('')/Index11.html" target="_blank">JS projects</a></li>
+					</ul>
+				</li>
+				<li><a>JQUERY</a>
+					<ul class="d2">
+						<li><a href="background..url('')/Index11(2).html" target="_blank">JQUERY elementry course</a></li>
+						<li><a href="Column/Index19.html" target="_blank">JQUERY advanced course </a></li>
+						<li><a href="Table/Index5.html" target="_blank">JQUERY projects</a></li>
+					</ul>
+				</li>
+				<li><a href="Selectors/index8.html" target="_blank">Sign Up</a></li>
+				<li><a href="outline__z-index/index6.html" target="_blank">Log In</a></li>
+			</ul>
+			<div id="d5">
+				<h1>Tutorials</h1>
+				<p><a href="Test 2.html" target="_blank"><strong>HTML</strong> elementry course</a></p>
+				<p><a href="@media/Index22.html" target="_blank"><strong>CSS</strong> elementry course</a></p>
+				<p><a href="Animations/Index18.html" target="_blank"><strong>JS</strong> elementry course</a></p>
+				<p><a href="background..url('')/Index11(2).html" target="_blank"><strong>JQUERY</strong> elementry course</a></p>
+				<hr/>
+				<table align="center">
+					<caption><big>Tutorials</big></caption>
+					<thead>
+						<tr>
+							<th>HTML</th>
+							<th>CSS</th>
+							<th>JS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>HTML Elementry tutorails</td>
+							<td>CSS elementry course</td>
+							<td>JS elementry course</td>
+						</tr>
+						<tr>
+							<td>HTML Advanced tutorails</td>
+							<td>CSS Advanced tutorails</td>
+							<td>JS advanced course </td>
+						</tr>
+						<tr>
+							<td>HTMl projects</td>
+							<td>CSS projects</td>
+							<td>JS projects</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr/>
+				<form action="server.js" method="get">
+					<fieldset>
+						<legend>Personal Information</legend>
+						FirstName:<input type="text" id="" name=""/>&nbsp&nbsplastName:<input type="text" id="" name=""/><br/>
+						<input type="radio" name="Gender" value="F"/>Fmale&nbsp&nbsp<input type="radio" name="Gender" value="M"/>Male<br/>
+						Age:<input type="number" min="1" max="150"/><br/>
+						Password:<input type="Password" id=""/><br/>
+						City:<select>
+							<option value="Tehran">Tehran</option>
+							<option value="Shiraz">Shiraz</option>
+							<option value="Esfahan">Esfahan</option>
+						</select><br/>
+						Browser you are using:<input type="text" id="" list="Browser"/>
+						<datalist id="Browser">
+							<option value="Chrome" selected>Chrome</option>
+							<option value="Firefox">Firefox</option>
+							<option value="Opera">Opera</option>
+							<option value="Microsoft Edge">Microsoft Edge</option>
+						</datalist><br/>
+						Description:<br/>
+						<textarea cols="30" rows="10"></textarea><br/>
+						<input type="reset" value="Reset"/>
+						<input type="submit" value="Send"/>
+					</fieldset>
+				</form>
+			</div>
+	</body>
+</html>

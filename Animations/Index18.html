@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			@-moz-keyframes A
+			{
+				25%
+				{
+					width:300px;
+					height:400px;
+					background-color:pink;
+				}
+				50%
+				{
+					width:500px;
+					height:600px;
+					background-color:red;
+				}
+				50%
+				{
+					width:700px;
+					height:500px;
+					background-color:green;
+					-moz-transform:skew(50deg,30deg);
+				}
+				75%
+				{
+					width:700px;
+					height:500px;
+					background-color:blue;
+					-moz-transform:rotatex(180deg);
+				}
+			}
+			#d1
+			{
+				position:absolute;
+				top:50%;
+				left:50%;
+				border:1px solid black;
+				width:200px;
+				height:200px;
+				background-color:yellow;
+				-moz-animation: A 6s;
+				-moz-animation-iteration-count:infinite;
+				-moz-animation-direction:alternate;
+				-moz-animation-timing-function:linear;
+				-moz-animation-delay:2s;
+			}
+			#d1:hover
+			{
+				-moz-animation-play-state:paused;
+			}
+			#d2
+			{
+				position:absolute;
+				top:50%;
+				left:50%;
+				-moz-transform:translate(-50%,-50%);
+				white-space:nowrap;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+			<div id="d2">
+				Hello Damn World !
+			</div>
+		</div>
+	</body>
+</html>
